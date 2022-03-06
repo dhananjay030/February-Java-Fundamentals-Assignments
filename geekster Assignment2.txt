@@ -1,0 +1,270 @@
+Write a Program to Print the Pant's style Star Pattern.
+
+
+
+public class PaintStyleStarPattern {
+	public static void main(String[] args) {
+                 int rows=8;
+		
+		for (int i = rows; i >= 1; i-- ) 
+		{
+			for (int j = 1 ; j <= i; j++ ) 
+			{
+				System.out.print("*");
+
+			}
+			for (int k = 1 ; k <= 2 * (rows - i); k++ ) 
+			{
+				System.out.print(" ");
+			}
+			for (int l = 1 ; l <= i; l++ ) 
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}
+
+
+Write a program to Print Inverted V  Pattern.
+
+
+public class InvertedVStarPattern {
+     static void pattern(int n)
+    {
+        int i, j, k = 0;
+        for (i = n - 1; i >= 0; i--)
+        {
+            for (j = n - 1; j > k; j--)
+            {
+                System.out.print(" ");
+            }
+            System.out.print((char)(i + 65));
+            for (j = 1; j < (k * 2); j++)
+                System.out.print(" ");
+ 
+            if (i < n - 1)
+                System.out.print((char)(i + 65));
+            System.out.print("\n");
+            k++;
+        }
+    }
+    public static void main(String args[])
+    {
+
+        int n = 5;
+        pattern(n);
+    }
+}
+
+
+
+
+
+Write a Program to Print Half Diamond Star Pattern.
+
+
+
+public class HalfDiamondStarPattern {
+    static void halfDiamondStar(int N)
+{
+    int i, j;
+    for (i = 0; i < N; i++)
+    {
+        for (j = 0; j < i + 1; j++)
+             System.out.print("*");
+        System.out.print("\n");
+    }
+    for (i = 1; i < N; i++) 
+    {
+        for (j = i; j < N; j++)
+             System.out.print("*");
+        System.out.print("\n");
+    }
+}
+public static void main(String[] args)
+{
+    int N = 5;
+    halfDiamondStar(N);
+}
+}
+
+
+
+
+Pyramid Pattern
+
+
+public class PyramidStarPattern {
+    public static void printTriagle(int n)
+    {
+
+        for (int i=0; i<n; i++)
+        {
+            for (int j=n-i; j>1; j--)
+            {
+                System.out.print(" ");
+            }
+            for (int j=0; j<=i; j++ )
+            {
+                System.out.print("* ");
+            }
+
+            System.out.println();
+        }
+    }
+    public static void main(String args[])
+    {
+        int n = 5;
+        printTriagle(n);
+    }
+}
+
+
+
+
+
+
+ Left Triangle Star Pattern
+
+
+
+public class LeftTraingleStarPattern {
+     public static void printStars(int n)
+    {
+        int i, j;
+        for(i=0; i<n; i++)
+        { 
+            for(j=0; j<=i; j++)
+            {   
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+   }
+    public static void main(String args[])
+    {
+        int n = 5;
+        printStars(n);
+    }
+}
+
+
+
+
+
+
+WAP to find difference in 2 arrays
+
+
+public class FindDiffrenceInTwoArray {
+        public static void main(String args[]){
+    
+        int a[]={1,2,3};
+        int b[]={4,5,6};
+        int c[]=new int [b.length];
+        for(int i=0;i<a.length;i++)
+        {
+           c[i]=b[i]-a[i];
+           
+    }
+        for(int j=0;j<c.length;j++)
+        {
+            System.out.println(c[j]);
+        }
+         
+        
+    }
+}
+
+
+
+
+
+
+
+WAP to find first index at which element is present in array
+
+
+public class FindFirstIndexArray {
+        public static void main(String args[]){
+    
+        int a[]={1,2,3,4,5,6,7,8,9};
+        int index=0;
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]==2){
+            
+                index=i;
+        }
+           
+    }
+         System.out.println("First Index" +" "+index);
+        
+    }
+}
+
+
+
+
+
+
+WAP to find last index at which element is present in array
+
+
+public class LastIndexInArray {
+        public static void main(String args[]){
+    
+        int a[]={1,2,3,4,5,6,7,8,9};
+        int index=0;
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]==9){
+            
+                index=i;
+        }
+           
+    }
+         System.out.println("Last Index" +" "+index);
+        
+    }
+}
+
+
+
+
+
+write a method to Reverse a Number in Java
+
+
+public class ReverseNumberPrint {
+     public static void main(String args[]){
+            int no=123456,rem,rev=0;
+            while(no!=0)
+            {
+                rem=no%10;
+                rev=rev*10+rem;
+                no=no/10;
+                
+            }
+            System.out.println(rev);
+            
+    }
+}
+
+
+wrte a method to Swap Two Numbers without usng third variable
+"
+
+public class SwappingNumberWithoutUsingThirdVariable {
+      public static void main(String args[]){
+            int a=10, b=20;
+            a=a+b;
+            b=a-b;
+            a=a-b;
+            System.out.println("a:"+a);
+             System.out.println("b:"+b);
+    }
+
+}
