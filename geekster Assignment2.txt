@@ -27,6 +27,12 @@ public class PaintStyleStarPattern {
 }
 
 
+
+
+
+
+
+
 Write a program to Print Inverted V  Pattern.
 
 
@@ -62,6 +68,10 @@ public class InvertedVStarPattern {
 
 
 
+
+
+
+
 Write a Program to Print Half Diamond Star Pattern.
 
 
@@ -89,6 +99,12 @@ public static void main(String[] args)
     halfDiamondStar(N);
 }
 }
+
+
+
+
+
+
 
 
 
@@ -126,6 +142,12 @@ public class PyramidStarPattern {
 
 
 
+
+
+
+
+
+
  Left Triangle Star Pattern
 
 
@@ -149,6 +171,11 @@ public class LeftTraingleStarPattern {
         printStars(n);
     }
 }
+
+
+
+
+
 
 
 
@@ -184,6 +211,10 @@ public class FindDiffrenceInTwoArray {
 
 
 
+
+
+
+
 WAP to find first index at which element is present in array
 
 
@@ -204,6 +235,17 @@ public class FindFirstIndexArray {
         
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -235,6 +277,22 @@ public class LastIndexInArray {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 write a method to Reverse a Number in Java
 
 
@@ -252,6 +310,17 @@ public class ReverseNumberPrint {
             
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 wrte a method to Swap Two Numbers without usng third variable
