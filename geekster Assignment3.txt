@@ -1,0 +1,158 @@
+
+Using FinallyBlock
+
+
+
+
+public class FinallyBlock {
+        public static void main(String args[]){
+        int n=20,number;
+        try{
+            number=n/0;
+        }
+        catch(Exception e){
+            System.out.println("A number cannot divided by 0");
+        }
+        
+        finally{
+                    System.out.println("Finally Block:");
+               }
+        System.out.println("Hello");
+    }
+}
+
+
+
+
+
+
+
+
+
+Using TryCatch 
+
+
+
+
+
+public class UsingTryCatch {
+    public static void main(String args[]){
+        int n1=20,n2=0, x[]={2,0,4,6},r=0;
+        System.out.println("Hello");
+        try{
+            r=n1/n2;
+            System.out.println("Division="+r);
+        }
+        catch(ArithmeticException e){
+            System.out.println("A number cannot divided by 0");
+        
+        }
+        
+    
+    }
+}
+
+
+
+
+
+Using Throw Keywords
+
+
+
+ class Students{
+        private int age;
+        public void setAge(int a){
+            if(a<=0)
+            {
+                throw new ArithmeticException("Invaild Age"); 
+           }
+            else{
+                age=a;
+            }
+        }
+            public int getAge(){
+                return age;
+                }
+    }
+    
+public class ThrowKeyword {
+   
+    public static void main(String args []){
+        Students s =new Students();
+        try{
+            s.setAge(-12);
+            System.out.println("Your age="+s.getAge());
+        }
+        catch(ArithmeticException e){
+            System.out.println("e.getMessage");
+        
+        }
+    }
+}
+
+
+
+
+"What kind of checked or unchecked exception will the following programs throw, if any?
+public class Test 
+{
+public static void main(String[] args) 
+{
+ int x = 10;
+ int y = 0;
+ int z = x / y;
+ System.out.println(z);
+  }
+}
+
+Output
+ArithmeticException
+
+
+
+
+b)
+
+ public class Test 
+{
+public static void main(String[] args) 
+{        
+ byte num;
+ System.out.println(""Scientech"");
+  num = Byte.parseByte(""Easy"");
+  System.out.println(""num: "" +num);
+  }
+}
+
+Output
+Scientech
+Easy
+
+
+
+c)
+What will be the output of the following program when run?
+
+
+
+public class Test 
+{
+public static void main(String[] args)
+{                
+try {
+ int value = 5;
+ if (value < 10)
+    throw new RuntimeException(""Value is less than 10"");
+ }
+catch (RuntimeException re) {
+   System.out.println(re.getMessage());
+  }
+System.out.println(""Outside try-catch block"");        
+  }
+}
+"
+
+Output 
+Value is less than 10
+Outside Try -Catch block
